@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Transfer Certificate Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Transfer Certificate Generator</h1>
+        <form action="/generate_certificate" method="post">
+            <label for="student_name">Student Name:</label>
+            <input type="text" id="student_name" name="student_name" required><br>
+            <label for="date_of_birth">Date of Birth:</label>
+            <input type="date" id="date_of_birth" name="date_of_birth" required><br>
+            <label for="transfer_date">Date of Transfer:</label>
+            <input type="date" id="transfer_date" name="transfer_date" required><br>
+            <input type="submit" value="Generate Transfer Certificate">
+        </form>
+    </div>
+</body>
+</html>
